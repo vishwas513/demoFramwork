@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		04420B5B23BE243C008193EF /* ddf.h in Headers */ = {isa = PBXBuildFile; fileRef = 04420B5923BE243C008193EF /* ddf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04420B6223BE247E008193EF /* ddg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04420B6123BE247E008193EF /* ddg.swift */; };
+		04420B9123BE2DE5008193EF /* ddf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04420B5623BE243C008193EF /* ddf.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04420B5623BE243C008193EF /* ddf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ddf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04420B5923BE243C008193EF /* ddf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddf.h; sourceTree = "<group>"; };
 		04420B5A23BE243C008193EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04420B6123BE247E008193EF /* ddg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04420B9123BE2DE5008193EF /* ddf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +52,7 @@
 			children = (
 				04420B5923BE243C008193EF /* ddf.h */,
 				04420B5A23BE243C008193EF /* Info.plist */,
+				04420B6123BE247E008193EF /* ddg.swift */,
 			);
 			path = ddf;
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 				TargetAttributes = {
 					04420B5523BE243C008193EF = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04420B6223BE247E008193EF /* ddg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 		04420B5F23BE243C008193EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mcs.ddf;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +292,7 @@
 		04420B6023BE243C008193EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
